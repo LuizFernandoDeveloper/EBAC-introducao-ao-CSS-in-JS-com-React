@@ -1,11 +1,19 @@
-import EstiloGlobalComJs from './styles'
-import Teste from './text'
+import Sobre from './containers/Sobre'
+import Projetos from './containers/projetos'
+import SiderBar from './containers/sidebar'
+import EstiloGlobalComJs, { Container } from './styles'
 
 function App() {
   return (
     <>
-      <Teste />
       <EstiloGlobalComJs />
+      <Container>
+        <SiderBar />
+        <main>
+          <Sobre />
+          <Projetos />
+        </main>
+      </Container>
     </>
   )
 }
